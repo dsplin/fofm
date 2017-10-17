@@ -20,7 +20,7 @@ class PlanetsController extends BaseController{
     public function getView($planetId) {
         $planet = Planet::find($planetId);
 
-        // Если такой планеты нет, то вернем пользователю ошибку 404 - Не найдено
+        
         if (!$planet) {
             App::abort(404);
         }
